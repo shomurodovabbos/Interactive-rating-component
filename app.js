@@ -5,10 +5,10 @@ const thankYouSection = document.querySelector(".thank-you-section");
 const rateNum = document.querySelector(".rate-num");
 
 submitBtn.addEventListener("mouseover", () => {
-  if (rateNum === 0) {
-    btn.style.cursor = "not-allowed";
+  if (rateNum == 0) {
+    submitBtn.style.cursor = "not-allowed";
   } else {
-    btn.style.cursor = "pointer";
+    submitBtn.style.cursor = "pointer";
   }
 });
 
