@@ -6,7 +6,7 @@ const rateNum = document.querySelector(".rate-num");
 
 stars.forEach(function (star, indx) {
   star.addEventListener("click", function () {
-    if (indx >= 0 && indx <= 4) {
+    if (star.clicked === undefined) {
       submitBtn.style.cursor = "pointer";
     }
     submitBtn.addEventListener("click", function () {
