@@ -4,16 +4,11 @@ const mainSection = document.querySelector(".main");
 const thankYouSection = document.querySelector(".thank-you-section");
 const rateNum = document.querySelector(".rate-num");
 
-submitBtn.addEventListener("mouseover", () => {
-  if (rateNum == 0) {
-    submitBtn.style.cursor = "not-allowed";
-  } else {
-    submitBtn.style.cursor = "pointer";
-  }
-});
-
 stars.forEach(function (star, indx) {
   star.addEventListener("click", function () {
+    if (indx >= 0 && indx <= 4) {
+      submitBtn.style.cursor = "pointer";
+    }
     submitBtn.addEventListener("click", function () {
       mainSection.classList.add("hidden");
       thankYouSection.classList.remove("hidden");
