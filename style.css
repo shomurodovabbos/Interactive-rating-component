@@ -94,10 +94,11 @@ a {
   background: var(--neutral-medium-grey);
   color: var(--neutral-white);
 }
-.rating-nums li a:focus {
+.rating-nums li a:focus-within {
   background-color: var(--primary-orange);
   color: var(--neutral-white);
 }
+
 .submit-btn {
   display: inline-block;
   width: 100%;
